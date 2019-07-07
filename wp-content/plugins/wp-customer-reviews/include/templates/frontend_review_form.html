@@ -1,0 +1,61 @@
+%---
+NOTICE: Changes made to this file do nothing. 
+Additionally, this file will be overwritten with each plugin update and/or activation.
+If you have the Pro version, you can edit this file via plugin settings without it being overwritten.
+---%
+
+{{:showform}}
+	<div class="wpcr3_respond_2">
+		<div class="wpcr3_div_2">
+			<table class="wpcr3_table_2">
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<div class="wpcr3_leave_text">
+								Submit your review
+							</div>
+						</td>
+					</tr>
+					{{input_fields}}
+					{{rating_field}}
+					{{review_field}}
+					<tr>
+						<td colspan="2" class="wpcr3_check_confirm">
+							<div class="wpcr3_clear"></div>
+							<input type="hidden" name="wpcr3_postid" value="{{postid}}" />
+							<input type="text" class="wpcr3_fakehide wpcr3_fake_website" name="website" />
+							<input type="text" class="wpcr3_fakehide wpcr3_fake_url" name="url" />
+							<input type="checkbox" class="wpcr3_fakehide wpcr3_fconfirm1" name="wpcr3_fconfirm1" value="1" />
+							<label>
+								<input type="checkbox" name="wpcr3_fconfirm2" class="wpcr3_fconfirm2" value="1" />
+								&nbsp; Check this box to confirm you are human.
+							</label>
+							<input type="checkbox" class="wpcr3_fakehide wpcr3_fconfirm3" name="wpcr3_fconfirm3" checked="checked" value="1" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="wpcr3_button_1 wpcr3_submit_btn">Submit</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<div class="wpcr3_button_1 wpcr3_cancel_btn">Cancel</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="wpcr3_clear wpcr3_pb5"></div>
+	<div class="wpcr3_respond_3">
+		<p>
+			<div class="wpcr3_button_1 wpcr3_show_btn">
+				Create your own review
+			</div>
+		</p>
+		{{!found_posts}}
+			<p class="wpcr3_no_reviews">
+				There are no reviews yet. Be the first to leave yours!
+			</p>
+		{{/found_posts}}
+	</div>
+	<div class="wpcr3_dotline"></div>
+{{/showform}}

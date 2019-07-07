@@ -1,0 +1,80 @@
+/* 
+HEADER BOXED LAYOUT
+================================================ */
+body.page-loaded.fixed-header #headerwrap {
+	position: absolute;
+}
+
+/* body */
+body {
+	background-color: #f4f4f4;
+}
+#pagewrap {
+	width: 1236px;
+	max-width: 95%;
+	margin: 38px auto;
+	background-color: #fff;
+	box-shadow: 0 1px 25px rgba(0,0,0,.1);
+	position: relative;
+}
+
+/* headerwrap */
+.fixed-header #headerwrap,
+#headerwrap {
+	text-align: inherit;
+}
+body:not(.fixed-header-on) #headerwrap {
+	top: 0 !important;
+}
+#header {
+	width: 1160px;
+	padding: 0;
+	max-width: 96%;
+}
+.mobile_menu_active #header {
+	width: auto;
+}
+
+/* logo wrap */
+.logo-wrap {
+	float: left;
+}
+
+/* site description */
+#site-description {
+	left: 0;
+	transform: none;
+	text-align: left;
+}
+#site-description:before {
+	left: 0;
+	margin-left: 14px;
+}
+
+/* main navigation */
+#main-nav {
+	position: static;
+	float: left;
+	width: auto;
+	max-width: none;
+	padding-left: 23px;
+}
+#main-nav .has-mega-sub-menu .mega-sub-menu,
+#main-nav .has-mega-column > .sub-menu {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* menu-icon */
+#headerwrap #menu-icon {
+	position: absolute;
+	margin: auto;
+}
+
+/* ADMIN BAR */
+.admin-bar #headerwrap {
+	top: 0;
+}
+.mobile_menu_active.admin-bar #headerwrap #menu-icon {
+	top: 20px;
+}

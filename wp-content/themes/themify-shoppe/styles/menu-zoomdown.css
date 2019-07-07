@@ -1,0 +1,38 @@
+/* MENU ZOOM DOWN */
+.mobile_menu_active.mobile-menu-visible.sidemenu-right #headerwrap,
+.mobile_menu_active.mobile-menu-visible.sidemenu-active.sidemenu-right #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.mobile_menu_active.sidemenu-right #headerwrap.fixed-header {
+	right: 0;
+	left: 0;
+}
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.mobile_menu_active.sidemenu-right {
+	left: 0;
+	right: 0;
+}
+.mobile_menu_active #mobile-menu.sidemenu {
+	left: 0;
+	right: 0;
+	width: 100%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	transform: translateY(0%) scale(2);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .8s ease;
+	 
+	
+}
+.mobile_menu_active.mobile-menu-visible #mobile-menu.sidemenu {
+	transform: translateY(0) scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+.mobile_menu_active.mobile-menu-visible .body-overlay {
+	display: block;
+	z-index: 998;
+	left: 0;
+	right: 0;
+	top: 0;
+	box-shadow: none;
+	background-color: rgba(0,0,0,0);
+}

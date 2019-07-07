@@ -1,0 +1,171 @@
+/* product categories */
+/* sub categories */
+.woocommerce ul.products ul li {
+	margin: 0 0 .4em;
+}
+
+/* woocommerce product */
+.module-products .wc-products .product {
+	box-sizing: border-box;
+	width: auto;
+}
+.woocommerce ul.themify_builder_slider li.product,
+.woocommerce-page ul.themify_builder_slider li.product,
+.module-products ul.themify_builder_slider .product {
+	float: left; /* reset float on the slider items, required */
+	margin-top: 10px; /* required for the sales badge */
+	width: auto;
+}
+.module-products.slider-agency .products.themify_builder_slider .product .onsale {
+	left: 0;
+	right: auto;
+}
+.module-products.slider-agency .themify_builder_slider .star-rating {
+	margin: 0 0 1em;
+}
+/* product layout */
+.woocommerce ul.products li.product h3,
+.wc-products .product h3,
+.module-products .themify_builder_slider h3 {
+	font-size: 1.1em;
+	padding: 0;
+	margin: 0 0 .3em;
+}
+.wc-products.grid2 .product,
+.wc-products.grid3 .product,
+.wc-products.grid4 .product {
+	clear: none;
+}
+.wc-products.grid4 .product {
+	width: 22.6%;
+	float: left;
+	margin-left: 3.2%;
+	margin-right: 0;
+	margin-bottom: 2em;
+}
+.wc-products.grid3 .product {
+	width: 31.2%;
+	float: left;
+	margin-left: 3.2%;
+	margin-right: 0;
+	margin-bottom: 2.2em;
+}
+.wc-products.grid2 .product {
+	width: 48.4%;
+	float: left;
+	margin-left: 3.2%;
+	margin-right: 0;
+	margin-bottom: 2.2em;
+}
+.wc-products.grid2-thumb .product {
+	width: 48.4%;
+	float: left;
+	margin-left: 3.2%;
+	text-align: left;
+	margin-bottom: 2.2em;
+}
+.wc-products.grid2-thumb .product .post-image,
+.wc-products.list-thumb-image .product .post-image {
+	float: left;
+	margin: 0 1.2em 1.2em 0;
+	max-width: 25%;
+}
+.wc-products.list-thumb-image .product .post-content {
+	overflow: hidden;
+}
+.wc-products.list-thumb-image .product .price {
+	font-size: 1em;
+}
+.wc-products.list-thumb-image .product h3 {
+	font-size: 1.1em;
+}
+.wc-products.list-thumb-image .product .add-to-cart-button {
+	font-size: .85em;
+}
+.wc-products.grid2-thumb .product .star-rating,
+.wc-products.list-thumb-image .product .star-rating,
+.wc-products.list-large-image .product .star-rating {
+	float: none;
+}
+.wc-products.list-large-image .product .post-image {
+	float: left;
+	margin: 0 1.2em 1.2em 0;
+	max-width: 65%;
+}
+.wc-products.grid4 .product:nth-of-type(4n+1),
+.wc-products.grid3 .product:nth-of-type(3n+1),
+.wc-products.grid2 .product:nth-of-type(2n+1),
+.wc-products.grid2-thumb .product:nth-of-type(2n+1) {
+	margin-left: 0;
+	clear: left;
+}
+.module-products .price del {
+	margin-right: .2em;
+	opacity: .6;
+	font-size: .9em;
+}
+.module-products .price ins {
+	background: none;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+.module-products .themify_builder_slider .star-rating {
+	margin: 0 auto 1em;
+	float: none;
+}
+.module-products .themify_builder_slider .onsale {
+	top: 10px !important;
+}
+.module-products .price,
+.module-products .star-rating {
+	margin-bottom: 1em;
+	display: block;
+}
+.module-products .post-image img {
+	border-radius: 0;
+}
+.woocommerce ul.products li.product a img {
+	margin: 0 0 .7em;
+}
+.module-products.module-products img,
+.module-products img:hover {
+	box-shadow: none !important;
+}
+.module-products.list-thumb-image .product h3 {
+	padding-top: 0;
+}
+.module-products.list-thumb-image .product .onsale {
+	right: auto;
+	left: 9%;
+}
+.module-products a.added_to_cart {
+	display: block;
+}
+@media screen and (max-width: 660px) {
+	.module-products .product {
+		width: auto !important;
+		float: none !important;
+	}
+}
+.module.module-product-categories .product-thumbs .post {
+	display: inline-block;
+	width: 24%;
+	margin: 0;
+}
+.module.module-product-categories .columns-1 .products .product {
+	width: 100%;
+}
+.module.module-product-categories .product a img,
+.module.module-product-categories .product a:hover img {
+	box-shadow: none;
+}
+.module.module-product-categories .product .product-thumbs img {
+	margin-bottom: 0;
+}
+.module.module-product-categories mark.count {
+	background: none;
+	color: inherit;
+}
+.module-products .pagenav {
+	clear: both;
+}

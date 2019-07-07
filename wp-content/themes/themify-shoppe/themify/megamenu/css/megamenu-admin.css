@@ -1,0 +1,45 @@
+.themify-widget-options .widget-inside {
+	display: block;
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+.tf-mega-columns-layout {
+	margin-top: 10px;
+}
+.tf-mega-columns-layout a {
+	width: 23px;
+	height: 9px;
+	background: #f3f3f3 url("../../themify-builder/img/builder/grids.png") no-repeat center;
+	display: inline-block;
+	padding: 5px;
+	margin-right: 5px;
+}
+.tf-mega-columns-layout a.selected {
+	background-color: #E6F2FE;
+	outline: 1px solid #00B5F9;
+}
+.tf-mega-columns-layout a[data-value=""] {
+	background-position: -33px -77px;
+}
+.tf-mega-columns-layout a[data-value="4-8"] {
+	background-position: 0px 0px;
+}
+.tf-mega-columns-layout a[data-value="8-4"] {
+	background-position: -34px -37px;
+}
+.tf-mega-columns-layout a[data-value="6-3-3"] {
+	background-position: 0px -57px;
+}
+.tf-mega-columns-layout a[data-value="3-3-6"] {
+	background-position: -34px 0px;
+}
+.tf-mega-columns-layout a[data-value="3-6-3"] {
+	background-position: 0px -18px;
+}
+.tf-mega-columns-layout a[data-value="3-9"] {
+	background-position: -34px -18px;
+}
+.tf-mega-columns-layout a[data-value="9-3"] {
+	background-position: -66px 0px;
+}

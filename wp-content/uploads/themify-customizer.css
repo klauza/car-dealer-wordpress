@@ -1,0 +1,84 @@
+/* Themify Customize Styling */
+body {	background: none;
+	background-color: #ffffff; 
+}
+#headerwrap {	background: none;
+	background-color: #000000; 
+}
+#header {	
+	font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;	letter-spacing:4px;
+	line-height:2px;
+
+	color: #ffffff; 
+}
+#header a {	
+	color: #ffffff; 
+}
+#header a:hover {	
+	color: #d6a828; 
+}
+#headerwrap.fixed-header, .transparent-header #headerwrap.fixed-header {	background: none;
+	background-color: rgba(0,0,0,0.61); 
+}
+#headerwrap.fixed-header #header, #headerwrap.fixed-header #site-description {	
+	font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;	line-height:3px;
+ 
+}
+#headerwrap.fixed-header #header {	
+	color: #5c1b1b; 
+}
+body[class*="themify"] #site-logo a {		font-size:16px;
+	text-transform:none; 
+}
+body[class*="themify"] #site-logo a img {		width: 100px;
+	height: 50px; 
+}
+#site-logo {		position:static;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px; 
+}
+.page-title, .sidebar-none .page-title, .sidebar-none.single .page-title {	
+	font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;	font-weight:bold;
+	font-size:0px;
+ 
+}
+#footer-logo, #footer #footer-logo a {	
+	font-family:Verdana, Geneva, sans-serif;	font-size:12px;
+	text-transform:uppercase; 
+}
+@media screen and (max-width: 1280px) { /* Themify Customize Styling */
+body {	background: none;
+	background-color: #ffffff; 
+}
+#headerwrap {	background: none;
+	background-color: #000000; 
+}
+#header {	
+	color: #ffffff; 
+}
+#header a {	
+	color: #ffffff; 
+}
+#header a:hover {	
+	color: #d6a828; 
+}
+#headerwrap.fixed-header #header {	
+	color: #5c1b1b; 
+}
+.page-title, .sidebar-none .page-title, .sidebar-none.single .page-title {		font-weight:bold;
+ 
+}
+ }@media screen and (max-width: 768px) { /* Themify Customize Styling */
+.page-title, .sidebar-none .page-title, .sidebar-none.single .page-title {		font-weight:bold;
+ 
+}
+ }@media screen and (max-width: 680px) { /* Themify Customize Styling */
+#headerwrap.fixed-header, .transparent-header #headerwrap.fixed-header {	background: none;
+	background-color: rgba(0,0,0,0.61); 
+}
+.page-title, .sidebar-none .page-title, .sidebar-none.single .page-title {		font-weight:bold;
+ 
+}
+ }

@@ -1,0 +1,15 @@
+/*
+ Multiple jQuery Tabs
+ www.ilovecolors.com.ar/multiple-jquery-tabs/
+
+ Copyright (c) 2010 Elio Rivero (http://ilovecolors.com.ar)
+ Licensed under the GPL (http://www.opensource.org/licenses/gpl-license.php) license.
+
+ Built on top of the jQuery library
+ http://jquery.com
+
+*/
+var previous=[],current=[],tablist=[];function change(a){current[a].reference!=previous[a].reference&&(jQuery(a+" .ilc-tab#"+current[a].reference).show(),jQuery(a+' .ilc-htabs a[href="#'+previous[a].reference+'"]').parents("li").removeClass("select"),jQuery(a+' .ilc-htabs a[href="#'+current[a].reference+'"]').parents("li").addClass("select"),jQuery("#"+previous[a].reference).hide(),previous[a].reference=current[a].reference)}
+function Tab(a){var c=0;this.block=a;this.next=function(){previous[this.block].reference=jQuery(this.block+" .ilc-htabs a").get()[c].href.split("#")[1];c>=jQuery(this.block+" .ilc-htabs a").get().length-1?c=0:c++;current[this.block].reference=jQuery(this.block+" .ilc-htabs a").get()[c].href.split("#")[1];change(this.block)}}function Reference(a){this.reference=a}
+function ilcTabs(a){for(var c in a){var d=a[c].split("_"),b=d[0];jQuery(b+" .ilc-tab:not(:first)").hide();jQuery(b+" .ilc-tab:first").show();jQuery(b+" .ilc-htabs a:first").parents("li").addClass("select");previous[b]=new Reference(jQuery(b+" .ilc-htabs a:first").attr("href").split("#")[1]);current[b]=new Reference(jQuery(b+" .ilc-htabs a").get()[1].href.split("#")[1]);tablist[b]=new Tab(b);void 0!=d[1]&&(tablist[b].intervalid=setInterval("tablist['"+b+"'].next()",d[1]));jQuery(b+" .ilc-htabs a").click(function(a){a=
+"#"+a.target.getAttribute("href").split("#")[1];a="#"+jQuery(a).parent().parent().attr("id");current[a].reference=jQuery(this).attr("href").split("#")[1];change(a);clearInterval(tablist[a].intervalid);return!1})}};

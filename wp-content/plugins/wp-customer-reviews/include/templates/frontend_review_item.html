@@ -1,0 +1,58 @@
+%---
+NOTICE: Changes made to this file do nothing. 
+Additionally, this file will be overwritten with each plugin update and/or activation.
+If you have the Pro version, you can edit this file via plugin settings without it being overwritten.
+---%
+<div class="wpcr3_review_item">
+	{{:is_business}}
+	<div class="wpcr3_item wpcr3_business" itemscope itemtype="http://schema.org/LocalBusiness">
+		{{:aggregate}}
+			<div class="wpcr3_item_name">
+				{{:on_same_page}}
+					{{wpcr3_business_name}}
+				{{/on_same_page}}
+				{{!on_same_page}}
+					<a href="{{postLink}}">{{wpcr3_business_name}}</a>
+				{{/on_same_page}}
+			</div>
+		{{/aggregate}}
+		<meta itemprop="name" content="{{wpcr3_business_name}}" />
+		<meta itemprop="url" content="{{wpcr3_business_url}}" />
+		<meta itemprop="image" content="{{wpcr3_business_image}}" />
+		{{:wpcr3_business_phone}}
+			<meta itemprop="telephone" content="{{wpcr3_business_phone}}" />
+		{{/}}
+		{{:wpcr3_business_city}}
+			<div class="wpcr3_hide" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<meta itemprop="streetAddress" content="{{wpcr3_business_street1}}{{:wpcr3_business_street2}}{{wpcr3_business_street2}}{{/wpcr3_business_street2}}" />
+				<meta itemprop="addressLocality" content="{{wpcr3_business_city}}" />
+				<meta itemprop="addressRegion" content="{{wpcr3_business_state}}" />
+				<meta itemprop="postalCode" content="{{wpcr3_business_zip}}" />
+			</div>
+		{{/}}
+		{{aggregate}}
+		{{reviews}}
+	</div>
+	{{/is_business}}
+	
+	{{:is_product}}
+	<div class="wpcr3_item wpcr3_product" itemscope itemtype="http://schema.org/Product">
+		{{:aggregate}}
+			<div class="wpcr3_item_name">
+				{{:on_same_page}}
+					{{wpcr3_product_name}}
+				{{/on_same_page}}
+				{{!on_same_page}}
+					<a href="{{postLink}}">{{wpcr3_product_name}}</a>
+				{{/on_same_page}}
+			</div>
+		{{/aggregate}}
+		<meta itemprop="name" content="{{wpcr3_product_name}}" />
+		<meta itemprop="brand" content="{{wpcr3_product_brand}}" />
+		<meta itemprop="productID" content="{{wpcr3_product_id}}" />
+		<meta itemprop="image" content="{{wpcr3_product_image}}" />
+		{{aggregate}}
+		{{reviews}}
+	</div>
+	{{/is_product}}
+</div>

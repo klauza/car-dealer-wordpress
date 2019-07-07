@@ -1,0 +1,65 @@
+%---
+NOTICE: Changes made to this file do nothing. 
+Additionally, this file will be overwritten with each plugin update and/or activation.
+If you have the Pro version, you can edit this file via plugin settings without it being overwritten.
+---%
+{{#reviews}}
+	<div class="wpcr3_dotline"></div>
+	<div id="wpcr3_id_{{id}}" class="wpcr3_review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+		<meta itemprop="author" content="{{wpcr3_review_name}}" />
+		<div class="wpcr3_hide" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+			<meta itemprop="bestRating" content="5" />
+			<meta itemprop="worstRating" content="1" />
+			<meta itemprop="ratingValue" content="{{wpcr3_review_rating}}" />
+		</div>
+		<div class="wpcr3_review_ratingValue">{{stars}}</div>
+		<div class="wpcr3_review_datePublished" itemprop="datePublished">{{post_date}}</div> 
+		<div class="wpcr3_review_author">by 
+			<span class="wpcr3_caps">
+				{{:wpcr3_review_website}}
+					<a target="_blank" href="{{wpcr3_review_website}}">{{wpcr3_review_name}}</a>
+				{{/wpcr3_review_website}}
+				{{!wpcr3_review_website}}
+					{{wpcr3_review_name}}
+				{{/wpcr3_review_website}}
+			</span> on 
+			<span class="wpcr3_item_name">
+				{{:on_same_page}}
+					{{item_name}}
+				{{/on_same_page}}
+				{{!on_same_page}}
+					<a href="{{postLink}}">{{item_name}}</a>
+				{{/on_same_page}}
+			</span>
+		</div>
+		<div class="wpcr3_clear"></div>
+		{{:wpcr3_review_title}}
+			<div class="wpcr3_review_title wpcr3_caps">{{wpcr3_review_title}}</div>
+		{{/wpcr3_review_title}}
+		<div class="wpcr3_clear"></div>
+		{{:wpcr3_custom_fields}}
+			<div class="wpcr3_review_customs">
+				{{#wpcr3_custom_fields}}
+					<div class="wpcr3_review_custom">
+						<span class="wpcr3_review_custom_label">{{label}}:</span> <span class="wpcr3_review_custom_value">{{value}}</span>
+					</div>
+				{{/wpcr3_custom_fields}}
+			</div>
+			<div class="wpcr3_clear"></div>
+		{{/wpcr3_custom_fields}}
+		
+		<blockquote class="wpcr3_content" itemprop="reviewBody">
+			<p>
+				{{content}}
+			</p>
+		</blockquote>
+		
+		{{:wpcr3_review_admin_response}}
+			<blockquote class="wpcr3_content wpcr3_admin_response">
+				<p>
+					{{wpcr3_review_admin_response}}
+				</p>
+			</blockquote>
+		{{/wpcr3_review_admin_response}}
+	</div>
+{{/reviews}}

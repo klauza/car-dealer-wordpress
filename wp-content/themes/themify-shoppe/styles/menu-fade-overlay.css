@@ -1,0 +1,47 @@
+/* MENU FADE OVERLAY */
+.mobile_menu_active.mobile-menu-visible.sidemenu-right #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.mobile_menu_active.sidemenu-right,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.mobile_menu_active.sidemenu-right #headerwrap.fixed-header {
+	left: 0;
+	right: 0;
+}
+.mobile_menu_active #mobile-menu.sidemenu {
+	left: 0;
+	right: 0;
+	width: 100%;
+	perspective: 400px;
+	opacity: 0;
+	visibility: hidden;
+	transition: .8s ease;
+	overflow-x: hidden;
+	border: none;
+	pointer-events: none;
+}
+.mobile_menu_active.mobile-menu-visible #mobile-menu.sidemenu {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+.mobile_menu_active #mobile-menu.sidemenu:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 50em;
+	transform: scale(0);
+	transition: all .8s ease;
+}
+.mobile_menu_active.mobile-menu-visible #mobile-menu.sidemenu:before {
+	transform: none;
+	border-radius: 0;
+	background-color: transparent;
+}
+.mobile-menu-visible .body-overlay,
+.mobile_menu_active .body-overlay,
+ .body-overlay.body-overlay-on {
+	display: none;
+}

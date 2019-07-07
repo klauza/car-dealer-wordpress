@@ -1,0 +1,438 @@
+@import "mixins";
+@import "fonts";
+
+/* Menu */
+#adminmenu {
+  #menu-posts-wpcm_vehicle {
+    .wp-menu-image:before {
+      font-family: "wp-car-manager" !important;
+      content: "\e800";
+      font-size: 1.1em !important;
+      line-height: 1.3em;
+    }
+  }
+}
+
+.wpcm-page-makes {
+  #col-right {
+    table {
+      thead {
+        th, td {
+          height: 22px;
+          padding-left: 0;
+        }
+        #actions {
+          width: 10%;
+        }
+      }
+      th {
+        span {
+          padding: 7px 7px 8px 10px;
+        }
+      }
+      tbody {
+        th, td {
+          height: 41px;
+        }
+        td.column-configure {
+          text-align: right;
+        }
+        .wpcm-btn-configure {
+          border: 1px solid #cccccc;
+          background-color: #f7f7f7;
+          padding: 4px;
+          line-height: .9em;
+          border-radius: 5px;
+          &:before {
+            color: #555555;
+            font-size: .9em;
+          }
+          &:hover {
+            border-color: #828282;
+          }
+        }
+
+      }
+
+      thead, tfoot {
+        th, td {
+          height: 22px;
+          padding-left: 0;
+        }
+      }
+
+    }
+  }
+}
+
+.wpcm_vehicle_page_wpcm-models {
+  .wp-submenu {
+    li.current {
+      display: none;
+    }
+  }
+}
+
+/** Car Data Meta Box **/
+#wpcm-car-data, #wpcm-listing-data {
+  .inside {
+    @include clearfix();
+    table {
+      width: 100%;
+      margin: 0;
+      float: left;
+      @media ( max-width: 668px ) {
+          width: 100% !important;
+      }
+
+      th {
+        width: 30%;
+        text-align: left;
+      }
+      td {
+        padding: 5px 20px;
+        input.wpcm-text, input.wpcm-date-field, select {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+#wpcm-car-data {
+  .inside {
+    table {
+      width: 50%;
+    }
+  }
+
+}
+
+#wpcm-car-gallery {
+
+  .inside {
+    padding: 0;
+    margin: 0;
+
+    #car_images_container {
+
+      padding: 0 0 0 9px;
+
+      ul.car_images {
+        padding: 0;
+        margin: 0;
+
+        @include clearfix();
+
+        & > li {
+          width: 80px;
+          float: left;
+          cursor: move;
+          border: 1px solid #d5d5d5;
+          margin: 9px 9px 0 0;
+          background: #f7f7f7;
+          border-radius: 2px;
+          position: relative;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+
+          ul.actions {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            padding: 2px;
+            display: none;
+
+            li {
+              float: right;
+              margin: 0 0 0 2px;
+              background: none;
+              border: 0;
+
+              a {
+                width: 1em;
+                height: 1em;
+                margin: 0;
+                padding: 0;
+                display: block;
+                overflow: hidden;
+
+                position: relative;
+
+              }
+
+              a.delete {
+                @include ir();
+                font-size: 1.4em;
+
+                &:before {
+                  @include icon("\e802");
+                  color: white;
+                  background-color: #000;
+                  border-radius: 100%;
+                  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                  font-size: 12px;
+                  line-height: 18px;
+                }
+              }
+
+            }
+
+          }
+
+        }
+
+        li:hover {
+          ul.actions {
+            display: block;
+          }
+        }
+
+        li.wpcm-sortable-placeholder {
+          border: 3px dashed #dddddd;
+          position: relative;
+
+          &:after {
+            @include icon("\e806");
+            font-size: 2.618em;
+            line-height: 72px;
+            color: #ddd;
+          }
+
+        }
+
+      }
+
+    }
+
+    p.add_car_images {
+      padding: 0 12px 12px;
+    }
+
+  }
+
+}
+
+.wpcm-extensions-wrap {
+  h2 {
+    a.wpcm-reload-button {
+      float: right;
+    }
+  }
+
+  #settings-available-extensions {
+    display: block;
+  }
+
+  #settings-installed-extensions {
+    display: none;
+  }
+
+  .wpcm-extensions {
+    padding: 15px 0;
+    overflow: hidden;
+    div.wpcm-extension {
+      cursor: auto !important;
+      a {
+        color: #444;
+        text-decoration: none;
+      }
+      .wpcm-extension-img-wrapper {
+        width: 100%;
+        background: #00d198;
+        text-align: center;
+        img {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+      h3 {
+        padding: 0 20px;
+
+      }
+      p.wpcm-extension-desc {
+        min-height: 85px;
+        padding: 0 20px;
+      }
+      .wpcm-extension-footer {
+        padding: 0 20px 15px;
+        .wpcm-extension-price {
+          font-weight: bold;
+          &.sale {
+            color: #008000;
+            strike {
+              color: #444;
+            }
+          }
+        }
+        .wpcm-extension-more {
+          color: #00d198;
+          text-decoration: none;
+          font-weight: bold;
+          float: right;
+        }
+      }
+      .wpcm-extension-license {
+        padding: 0 20px 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        p.wpcm-license-status {
+          padding: 5px 0;
+          margin: 5px 0;
+          background: red;
+          font-weight: bold;
+          font-size: 1.2em;
+          color: #fff;
+          text-align: center;
+        }
+        p.wpcm-license-status.active {
+          background: #008000;
+        }
+        input {
+          width: 100%;
+          margin: 7px 0;
+          padding: 7px;
+        }
+        a.button-primary {
+          width: 100%;
+          margin: 5px auto 0;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+
+/** Overview page */
+.post-type-wpcm_vehicle {
+  .wp-list-table {
+    .column-image {
+      width: 45px;
+    }
+
+    .column-expires {
+      width: 15%;
+    }
+
+    .column-make, .column-model {
+      width: 12%;
+    }
+
+    .column-price, .column-mileage, .column-frdate {
+      width: 10%;
+    }
+
+    .column-actions {
+      width: 7%;
+      text-align: right;
+
+      a.wpcm-btn-approve {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        &:before {
+        font-family: "wp-car-manager" !important;
+        content: "\e808";
+        //font-size: 1.1em !important;
+        //line-height: 1.3em;
+        }
+      }
+    }
+
+    .wpcm-admin-image-header {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 19px;
+      &:after {
+        @include icon("\e806");
+        font-size: 1.2em;
+        color: #ddd;
+        line-height: 1.3em;
+      }
+    }
+    .wpcm-admin-image {
+      max-width: 40px;
+      max-height: 40px;
+      border: 1px solid #eee;
+    }
+
+    @media screen and (max-width: 782px) {
+      th.column-image {
+        display: none;
+      }
+      .column-primary .toggle-row {
+        top: -53px;
+      }
+      .column-primary {
+        overflow: visible !important;
+      }
+    }
+  }
+}
+
+.settings_panel {
+  .wpcm-description {
+    font-style: italic;
+  }
+}
+
+.wpcm-onboarding {
+
+  .wpcm-onboarding-pages {
+    width: 100%;
+
+    th,td {
+      padding: .5em 0;
+      border-bottom: 1px solid #ccc;
+    }
+    th {
+      text-align: left;
+    }
+  }
+
+  #wpcm-extensions,
+  #wpcm-never5 {
+    width: 48%;
+    float: left;
+  }
+
+  #wpcm-never5 {
+    padding-right: 2%;
+  }
+
+  #wpcm-extensions {
+    padding-left: 2%;
+  }
+
+  #wpcm-whats-next {
+    width: 100%;
+  }
+
+
+}
+
+.wpcm-taxonomy-explanation,
+.wpcm-makes-explanation,
+.wpcm-models-explanation {
+  margin-bottom: 40px;
+}
+
+/* Settings */
+a.nav-tab:focus {
+  box-shadow: none;
+}
+
+@import "tipped";
+@import "jquery-ui";

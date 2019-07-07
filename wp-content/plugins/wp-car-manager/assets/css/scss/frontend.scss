@@ -1,0 +1,84 @@
+@import "fonts";
+@import "mixins";
+
+/** OVERVIEW **/
+.select2-search__field {
+  background-color: #fff !important;
+}
+
+/** Listings **/
+@import "listings";
+
+/** SINGLE **/
+@import "single";
+
+/** CAR SUBMISSION FORM **/
+@import "car_submission";
+
+/** DASHBOARD **/
+@import "dashboard";
+
+.wpcm-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  margin: -22px 0 0 -22px;
+
+  &:after {
+    @include icon("\e807");
+    color: #fff;
+    font-size: 3em;
+
+    -webkit-transform-origin: 49% 49%;
+    -moz-transform-origin: 49% 49%;
+    -o-transform-origin: 49% 49%;
+    transform-origin: 49% 49%;
+
+    -webkit-animation: wpcm-spin 1.5s linear infinite;
+    -moz-animation: wpcm-spin 1.5s linear infinite;
+    animation: wpcm-spin 1.5s linear infinite;
+
+  }
+}
+
+.wpcm-button {
+  display: inline-block;
+  text-align: center;
+
+  line-height: .9em;
+  font-size: .9em;
+  background-color: #428dcb;
+  color: #fff;
+  //border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 16px 24px;
+  text-decoration: none;
+
+  &:active, &:focus, &:visited {
+    //border: 1px solid #ccc;
+    outline: 0;
+    background-color: #428dcb;
+    color: #fff;
+  }
+  &:hover {
+    background-color: #337cb8;
+    color: #fff;
+  }
+}
+
+.wpcm-button-dashboard-add-new {
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 10px 18px;
+  position: relative;
+  top: -6px;
+}
+
+
+@import "prettyPhoto";
+@import "select2";
+@import "dropzone";
+@import "jquery-ui";
+

@@ -1,0 +1,16 @@
+%---
+NOTICE: Changes made to this file do nothing. 
+Additionally, this file will be overwritten with each plugin update and/or activation.
+If you have the Pro version, you can edit this file via plugin settings without it being overwritten.
+---%
+<div data-page-opts="{{pageOpts}}" class="wpcr3_pagination">
+	<div class="wpcr3_pagination_page">Page {{onPage}} of {{numPages}}: </div>
+	<div data-page="1" class="wpcr3_a {{!hasPrev}}wpcr3_disabled{{/hasPrev}}">&laquo;</div>&nbsp;
+	<div data-page="{{prevPage}}" class="wpcr3_a wpcr3_ls {{!hasPrev}}wpcr3_disabled{{/hasPrev}}">&lsaquo;</div>&nbsp;
+	{{#pages}}
+		<div data-page="{{pageNum}}" class="wpcr3_a {{:current}}wpcr3_current{{/current}}">{{pageNum}}</div>
+	{{/pages}}
+	<div data-page="{{nextPage}}" class="wpcr3_a wpcr3_rs {{!hasNext}}wpcr3_disabled{{/hasNext}}">&rsaquo;</div>&nbsp;
+	<div data-page="{{numPages}}" class="wpcr3_a {{!hasNext}}wpcr3_disabled{{/hasNext}}">&raquo;</div>&nbsp;
+</div>
+<div class="wpcr3_clear"></div>

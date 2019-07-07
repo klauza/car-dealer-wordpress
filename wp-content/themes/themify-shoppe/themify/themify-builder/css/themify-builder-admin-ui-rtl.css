@@ -1,0 +1,167 @@
+.tb_module{
+    padding:2px 30px 2px 5px;
+    float:right;
+    text-align:right;
+}
+.tb_module:before{
+    left:auto;
+    right:7px;
+}
+.tb_switch_frontend{
+    margin-left:10px;
+}
+.tb_icon.add{
+    margin-left:5px;
+}
+.module_row .toggle_row{
+    left:5px;
+    right:auto;
+}
+.themify_builder_active .tb_row_actions{
+    text-align:right;
+}
+.themify_builder_active .row_menu{
+    margin-left:0;
+    margin-right:10px;
+}
+.tb_row_actions .tb_down{
+    left:auto;
+    right:0;
+}
+.tb_down_front{
+    left:0;
+    right:auto;
+}
+.tb_label{
+    float:right;
+    text-align:right;
+    margin:0 0 0 1%;
+}
+.tb_input{
+    float:right;
+    text-align:right;
+}
+.tb_field input[type=text]{
+    margin-right:0;
+    margin-left:5px;
+}
+.module_menu,.tb_module .module_menu{
+    left:auto;
+    right:10px;
+}
+.tb_module .module_name{
+    margin-right:auto;
+    margin-left:auto;
+	text-align: center;
+}
+.tb_module.active_module{
+    padding-left:0;
+    padding-right:38px;
+}
+.tb_down{
+    left:auto;
+    right:0;
+}
+.themify_builder_admin .active_module .tb_grid_menu{
+    left:auto;
+    right:36px;
+}
+.themify_builder_admin .module_label{
+    padding-left:0;
+    padding-right:20px;
+}
+.themify_builder_admin .module_subrow .module_label{
+    padding-right:0;
+}
+.themify_builder.builder-lightbox .tb_options_tab li{
+    float:right;
+}
+.themify_builder_admin h1, .themify_builder_admin h2, .themify_builder_admin h3, .themify_builder_admin h4, .themify_builder_admin h5, .themify_builder_admin h6{
+    text-align:right;
+}
+.tb_field .selectwrapper{
+    margin:5px 0 5px 5px;
+}
+.tb_input .minicolors-swatch{
+    margin:0  0 0 -4px;
+}
+.themify_builder_admin input[type="checkbox"]:checked:before{
+    margin:-3px 0 0 1px;
+}
+.themify_builder_admin input[type="radio"], .themify_builder_admin input[type="checkbox"]{
+    margin:0 0 0 4px;
+}
+/**
+ * FontAwesome-lightbox specifics */
+#themify_lightbox_fa .lightbox_container a{
+    float:left;
+    padding-left:0;
+    padding-right:12px;
+    margin-right:auto;
+    margin-left:10px;
+}
+#themify_lightbox_fa .lightbox_container a i{
+    margin-right:auto;
+    margin-left:1em;
+}
+
+/************************************************************************************
+BUILDER COLUMN
+*************************************************************************************/
+/* sub row */
+.module_column .tb_down_front .tb_module_action_more ul{
+    left:auto;
+    right:25px;
+}
+.module_subrow .tb_down_front .themify_module_menu,
+.module_column.col6-1 .tb_down_front .themify_module_menu,
+.module_column.col5-1 .tb_down_front .themify_module_menu,
+.module_column.col4-1 .tb_down_front .themify_module_menu,
+.module_subrow .tb_down_front .themify_module_menu ul,
+.module_column.col6-1 .tb_down_front .themify_module_menu ul,
+.module_column.col5-1 .tb_down_front .themify_module_menu ul,
+.module_column.col4-1 .tb_down_front .themify_module_menu ul{
+    left:0;
+    right:auto;
+}
+.module_column.col6-1 .tb_down_front li,
+.module_column.col5-1 .tb_down_front li,
+.module_column.col4-1 .tb_down_front li{
+    text-align:left;
+}
+.module_column.col6-1 .tb_down_front li a,
+.module_column.col5-1 .tb_down_front li a,
+.module_column.col4-1 .tb_down_front li a{
+    padding-left:12px;
+}
+.tb_data_mod_name{
+    left:auto;
+    right:27px;
+}
+.tb_down_front li{
+    text-align:inherit;
+}
+
+#tb_plus_btn_popover .predesigned_row,
+#tb_plus_btn_popover .tb_library_item {
+	margin-right: 0;
+	margin-left: 5%;
+}
+#tb_plus_btn_popover .tb_library_item:nth-child(4n+1),
+#tb_plus_btn_popover .predesigned_row.tb_column_break {
+	margin-left: 0;
+}
+
+/************************************************************************************
+POST LAYOUTS
+*************************************************************************************/
+#tb_tabs_frame_tabs .themify-layout-icon a {
+	float: right;
+}
+
+@media (min-width:1200px){
+    #themify_lightbox_fa{
+        margin-left:auto;
+        margin-right:-475px;
+    }
+}

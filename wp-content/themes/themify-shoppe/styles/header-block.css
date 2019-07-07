@@ -1,0 +1,197 @@
+/* 
+HEADER BLOCK
+================================================ */
+body.page-loaded.fixed-header #headerwrap {
+	position: absolute;
+}
+
+/* logo wrap */
+.logo-wrap:after {
+	border-bottom: 1px solid #dfa730;
+	content: '';
+	display: block;
+	width: 51px;
+	margin: auto;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+#site-logo {
+	font-size: 2em;
+	margin-top: 1em;
+}
+#site-description {
+	position: static;
+	opacity: 1;
+	visibility: visible;
+	background: none;
+	color: inherit;
+	transform: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+#headerwrap #site-description {
+	background: none;
+}
+#site-description:before {
+	display: none;
+}
+
+/* search button */
+.sidemenu .search-button {
+	position: static;
+	transform: none;
+	clear: both;
+	float: none;
+	width: auto;
+	height: auto;
+	border: none;
+}
+.search-button:before {
+	padding: 0;
+	font-size: 1.15em;
+}
+
+/* top icon menu */
+.top-icon-wrap {
+	position: static;
+	transform: none;
+	clear: both;
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+	perspective: none;
+	will-change: auto;
+}
+.top-icon-wrap ul {
+	float: none;
+}
+.icon-menu a .tooltip {
+	background: none;
+	color: inherit;
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto;
+	padding: 0;
+	position: static;
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+}
+.icon-menu a .tooltip:before {
+	display: none;
+}
+.icon-menu .cart a .cart_empty + .tooltip {
+	display: inline-block;
+}
+.icon-menu i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: .4em;
+}
+.icon-menu .icon-menu-count {
+	margin: 0 .4em 0 -1.4em;
+	vertical-align: bottom;
+}
+
+.cart-style-dropdown #cart-wrap,
+#cart-wrap {
+	right: 50%;
+	transform: translateX(50%);
+}
+#slide-cart #cart-wrap {
+	overflow-x: hidden;
+	right: 0;
+}
+.mobile_menu_active.cart-style-dropdown #cart-wrap {
+	right: 0;
+	transform: none;
+}
+
+/* main navigation */
+#main-nav {
+	position: static;
+	margin: 0;
+	padding: 0;
+	float: none;
+	text-align: inherit;
+	max-width: none;
+}
+#main-nav ul {
+	text-align: left;
+}
+#main-nav a {
+	padding: .9em .525em 1.05em;
+}
+
+/* MOBILE MENU ACTIVE */
+.mobile_menu_active .logo-wrap:after {
+	display: none;
+}
+.mobile_menu_active #site-logo {
+	margin-top: auto;
+}
+.mobile_menu_active #site-description {
+	text-align: left;
+	padding-bottom: 1em;
+}
+.mobile_menu_active .top-icon-wrap {
+	display: block;
+}
+.mobile_menu_active .sidemenu .search-button {
+	border-radius: 0;
+}
+.mobile_menu_active .search-button:before {
+	font-size: 1.3em;
+	padding: .9em;
+}
+.mobile_menu_active #menu-icon {
+	position: absolute;
+	margin: auto;
+}
+.mobile_menu_active.mobile-menu-visible #menu-icon {
+	right: 0;
+}
+.mobile_menu_active .top-bar-widget-inner {
+	max-width: none;
+	padding: 0 1.4em;
+}
+
+/* using flex css ordering elements */
+body:not(.mobile_menu_active) .sidemenu {
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+body:not(.mobile_menu_active) .sidemenu .top-icon-wrap {
+	order: 1;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row-reverse;
+}
+body:not(.mobile_menu_active) .sidemenu .search-button {
+	order: 2;
+}
+body:not(.mobile_menu_active) .sidemenu #main-nav-wrap {
+	order: 3;
+	flex: 1 100%;
+}
+
+/* FIXED HEADER */
+body:not(.mobile_menu_active) #headerwrap.fixed-header .logo-wrap,
+body:not(.mobile_menu_active) #headerwrap.fixed-header .top-icon-wrap,
+body:not(.mobile_menu_active) #headerwrap.fixed-header .search-button {
+	display: none;
+}
+.mobile_menu_active #headerwrap.fixed-header #site-description {
+	display: none;
+}
+
+/* ADMIN BAR */
+body:not(.mobile-menu-visible).mobile_menu_active.admin-bar #headerwrap #menu-icon {
+	top: 22px;
+	margin: auto;
+}
