@@ -1,6 +1,8 @@
 ## About
 
-It's a small project made for learning wordpress purposes. It has listing of available cars with filter option. The page also has all the nevessary contact details - address, tel number and a map location. Customer reviews are an extra added to the project. <br/>So I guess smaller businesses would be interested to have such a simple but practical page since that was my purpose of creating it. 
+It's a small project made while learning a bit of wordpress environment. Page was made for smaller businesses, is simple but practical.
+
+Website has filter option to list available cars. Also contains contact details like address, a map and a phone number. Also a customer can leave a review about a purchased car.
 
 <br/>
 
