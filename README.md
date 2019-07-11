@@ -6,7 +6,7 @@ Website has filter option to list available cars. Also contains contact details 
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/43997053/61059720-621ca100-a3f1-11e9-972a-ff66c0e5dcbe.jpg" width="300">
+<img src="https://user-images.githubusercontent.com/43997053/61059720-621ca100-a3f1-11e9-972a-ff66c0e5dcbe.jpg" width="500">
 
 <br/>
 <br/>
